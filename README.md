@@ -12,6 +12,8 @@ The application provides REST endpoints to:
 
 The counter state is stored in-memory and resets when the server restarts.  
 
+The images show how the JSON response is shown.
+
 ---
 
 ## How to Run  
@@ -107,3 +109,46 @@ Log format examples:
 [COUNTER] zeroed 0  
 ```
 ---
+
+### Counter Unit Tests  
+
+Counter functionality was tested using unit tests (mocha).  
+
+Tested behaviours:  
+
+- Initial counter value  
+- Counter increase operation  
+- Multiple increases  
+- Counter reset  
+
+---  
+
+### REST API Tests  
+
+REST endpoints were tested using Supertest.  
+
+Tested endpoints:  
+
+- GET /counter-read  
+- GET /counter-increase  
+- GET /counter-reset  
+
+Tests verify:  
+
+- Correct HTTP status codes  
+- Correct JSON responses  
+- Proper counter state handling  
+---  
+
+### To run the test:  
+Install dependencies:  
+```  
+npm install --save-dev mocha  
+```  
+```
+npm intall --save-dev supertest
+```
+To run test:
+```
+npm test
+```
