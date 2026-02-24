@@ -141,12 +141,12 @@ Tests verify:
 ---  
 
 ### To run the test:  
-Install dependencies:  
+Install dependencies (if not some reason already installed):  
 ```  
 npm install --save-dev mocha  
 ```  
 ```
-npm intall --save-dev supertest
+npm install --save-dev supertest
 ```
 To run test:
 ```
